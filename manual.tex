@@ -1,0 +1,407 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Generated, updated and maintained        %%
+%% by Jeyfrem Ahumada, Admin. Support       %%
+%% Specialist - Business Operations 		%%
+%% Union County Human Services				%%
+%% 2330 Concord Ave, Monroe, NC 28110		%%
+%%                                  		%%	
+%% Version 1.0								%%	
+%% Created April 26, 2023                   %%
+%% Submitted for review and approval on     %%
+%% April 28, 2023       					%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{fullpage}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=1]{helvet}
+\usepackage[helvet]{sfmath}
+\everymath={\sf}
+
+\usepackage{parskip}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[edges]{forest}
+\usetikzlibrary{trees,positioning,shapes,shadows,arrows}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\title{Union County Support Services Guide}
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+
+\pagenumbering{arabic}
+\tableofcontents
+
+\newpage
+
+
+\section{Organizational Chart}
+
+\tikzset{
+  basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+  root/.style   = {basic, rounded corners=2pt, thin, align=center, fill=white},
+  level-2/.style = {basic, rounded corners=6pt, thin,align=center, fill=white, text width=3cm},
+  level-3/.style = {basic, thin, align=center, fill=white, text width=1.8cm}
+}
+
+\begin{figure}[h]
+    \centering
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=12em, level distance=5em},
+%   {edge from parent fork down},
+  edge from parent/.style={->,solid,black,thick,sloped,draw}, 
+  edge from parent path={(\tikzparentnode.south) -- (\tikzchildnode.north)},
+  >=latex, node distance=1.2cm, edge from parent fork down]
+
+% root of the the initial tree, level 1
+\node[root] {\textbf{Kenda Griffin}}
+% The first level, as children of the initial tree
+  child {node[level-2] (c1) {\textbf{Amanda Estelle}}}
+  child {node[level-2] (c2) {\textbf{Juan Becerra}}}
+  child {node[level-2] (c3) {\textbf{Otilia Russey}}};
+
+% The second level, relatively positioned nodes
+\begin{scope}[every node/.style={level-3}]
+\node [below of = c1, xshift=10pt] (c11) {Amanda Autry};
+\node [below of = c11] (c12) {Michelle Horkan};
+\node [below of = c12] (c13) {Gabriela Ramos};
+\node [below of = c13] (c14) {Noemi Chavez};
+\node [below of = c14] (c15) {Virginia Spargo};
+\node [below of = c15] (c16) {Eugene Henderson};
+\node [below of = c16] (c17) {Tony Walker};
+
+
+\node [below of = c2, xshift=10pt] (c21) {Elsa Bonnell};
+\node [below of = c21] (c22) {Javier Perez};
+\node [below of = c22] (c23) {Jeyfrem Ahumada};
+\node [below of = c23] (c24) {Doralisa Pellane};
+\node [below of = c24] (c25) {Concepcion Morales};
+\node [below of = c25] (c26) {Silvia Nesbit};
+\end{scope}
+
+% lines from each level 1 node to every one of its "children"
+\foreach \value in {1,2,3,4,5,6,7}
+  \draw[->] (c1.195) |- (c1\value.west);
+
+\foreach \value in {1,...,6}
+  \draw[->] (c2.195) |- (c2\value.west);
+
+
+\end{tikzpicture}
+\end{figure}
+
+\subsection{Purpose}
+The guidelines and standard forms of practice outlined in this document shall serve as the standard practices to be followed by the \textbf{Union County Human Services Support Services team.} These shall provide a clear understanding of the scope of work and internal regulations to be adhered to by new employees, in order to ensure that the needs of both clients and workers are adequately met. The employee goals and objectives should support and contribute to the accomplishments of the department.
+
+\subsubsection{Administrative Support Services Mission}
+The mission of the \textbf{Support Services team} is to deliver outstanding customer service while facilitating access to resources that promote individuals' well-being. To achieve this, we employ standard operational procedures that promote consistent internal processes. Whether individuals require assistance with their health or financial needs, \textbf{the Support Services team strives to connect them with the appropriate program.} We prioritize keeping and maintaining confidentiality. We also guarantee and ensure that communication is conveyed in the language of their preference. Additionally, the Support Services manages internal operations such as \textbf{mail, package, supply, shredding, event coordination, and fleet management} in addition to offering \textbf{program} and \textbf{language support.}
+
+\section{Functions}
+
+\begin{description}
+    \item[$\bullet$] Navigation
+    \item[$\bullet$] Front Desk Reception
+    \item[$\bullet$] Switchboard
+    \item[$\bullet$] Language Services
+    \item[$\bullet$] Mail and Package Processing
+    \item[$\bullet$] Shred Service
+    \item[$\bullet$] Supply Management and Distribution of Office Supplies
+    \item[$\bullet$] Boards of Elections data
+    \item[$\bullet$] Fleet Management
+    \item[$\bullet$] Event Coordination
+    \item[$\bullet$] Public Service Announcements
+\end{description}
+
+\subsection{Navigation}
+\textbf{Navigation} is a service provided to clients and patients requiring assistance when entering and exiting the building. The role of the \textbf{Navigator} is to guide all visitors to the appropriate kiosks or departments for check-in. Additionally, the \textbf{Navigator} monitors wait times in the main lobby and promptly addresses any concerns related to the queue. The \textbf{Navigator} also ensures the safety of the environment by overseeing the supervision of children in the entrance and lobby areas, and by immediately reporting any suspicious activities or behaviors to security. The \textbf{primary objective} of the \textbf{Navigator} is to ensure that all visitors have a pleasant and safe experience during their time at the agency by guiding the according to their needs and addressing any questions or concerns they may have.
+
+\subsection{Front Desk Reception}
+The \textbf{Front Desk Staff} ensures that clients are registered correctly and all business components of the visit are met. \textbf{Visitors} are accommodated at \textbf{Window 5} to avoid waiting in a queue. 
+
+Under normal circumstances, this is the common procedure when assisting clients at the \textbf{Front Desk Reception}:
+
+\begin{description}
+    \item[$\bullet$] Clients register on the \textbf{iPad} at the kiosk and are put in a queue system
+    \item[$\bullet$] Front Desk Staff \textbf{electronically acknowledge} the client and calls client to their assigned window using the \textbf{intercom system.}
+    \item[$\bullet$] Front Desk Staff then determine which \textbf{internal program(s), worker} or \textbf{forms} are necessary to meet the needs of the client
+    \item[$\bullet$] Using \textbf{Touch n' Go}, a room is assigned to the client in question and the assigned caseworker - Both of their names are to be included in the 'remarks' section
+    \item[$\bullet$] Finally, the room number is added in the Queue Item Notes of Compass Appointments. In the event the client is in need of Language Services, the language they are in need of is to be added here as well. Any other relevant notes or information for the caseworker can always be included here.
+\end{description}
+
+Among the responsibilities of the \textbf{Front Desk Staff}, these can be found:
+
+\begin{description}
+    \item[$\bullet$] Scanning documents to clients' file and printing a receipt for them
+    \item[$\bullet$] Printing and providing forms to clients, if requested
+    \item[$\bullet$] Rotating as needed in all other areas of Support Services, \textbf{except} Centralized Scheduling.
+\end{description}
+
+Detailed instructions explaining the procedures of the Queue System can be found in the \textbf{Customer Service Standard Operating Procedures Guide}.
+
+\subsubsection{Generic Room Information}
+\begin{description}
+    \item[$\bullet$] \textbf{1st floor} is for Crisis Assessment, Work First, Childcare Subsidy, APS/CPS Intake, Adult Services
+    \item[$\bullet$] \textbf{2nd floor} is for Medicaid (Adult/F+C), Food and Nutrition Services, Fishing Licenses
+    \item[$\bullet$] \textbf{3rd floor} is for CPS Investigations, Foster Care and Adoptions, Adoptions and Licensing, Program Integrity
+\end{description}
+
+\subsection{Switchboard}
+The \textbf{Switchboard Operator} is responsible for ensuring effective communication between clients and staff members via the phone system. The role of the \textbf{Switchboard Operator} is to facilitate communication between \textbf{clients} and \textbf{staff} members through the phone system using \textbf{NCFast}.
+
+Some of the tasks related to this role are:
+
+\begin{description}
+    \item[$\bullet$] Answer questions clients might have
+    \item[$\bullet$] Provide frequently requested phone numbers to \textbf{clients} and \textbf{agency personnel}
+    \item[$\bullet$] Update agency \textbf{phone lists} by name and extension number
+\end{description}
+
+Switchboard Operators primarily support \textbf{Navigation} and \textbf{Mail}.
+
+\subsection{Language Services}
+Our \textbf{on-site} bilingual staff provides interpretation services for \textbf{Spanish-speaking clients} and \textbf{patients} during \textbf{business hours} and \textbf{after hours}, if needed. They also offer \textbf{document translation} services. These Spanish language services are primarily intended for \textbf{all} programs within Union County Human Services, including \textbf{Economic Services}, \textbf{Public Health}, \textbf{Dental}, \textbf{WIC}, and \textbf{Community Support and Outreach}, as well as \textbf{Public Communications} and \textbf{Environmental Health}. 
+
+For languages other than Spanish, we have a contract with \textbf{Pacifica Language Line}, and our bilingual team members help connect workers to the appropriate language service. Workers in need of languages other than Spanish are to reach out \textbf{directly} to the Language Services team for further directions.
+
+Our bilingual staff mainly supports the \textbf{Front Desk}, \textbf{Mail} and \textbf{Navigation} functions.
+
+Just so you can familiarize with the Language Services team, they are:
+
+\textbf{Jeyfrem Ahumada} - x4304 \newline
+\textbf{Elsa Bonnell} - x3345 \newline
+\textbf{Javier Perez} - x6181 \newline
+\textbf{Doralisa Pellane} - x4460 \newline
+\textbf{Concepcion Morales} - x4376 \newline
+
+\textbf{Juan Becerra} - x4846 \textbf{Human Services Supervisor}
+
+Language Services requests are to be sent to \textbf{interpreters@unioncountync.gov}
+
+\subsection{Mail}
+The Support Services team member working \textbf{mail} is to retrieve \textbf{incoming mail} from the post office \textbf{once it is delivered at the agency} (usually during the morning time) and to have \textbf{outgoing mail} ready for its pick up at this time, if any. 
+
+We ensure mail is processed \textbf{efficiently} for \textbf{all} business components of the agency. 
+
+The \textbf{Mail Processes} are as follow:
+
+\subsubsection{Incoming Mail}
+\begin{description}
+    \item[$\bullet$] At the start of the business day, mail is retrieved from the courier and client mail drop boxes
+    \item[$\bullet$] Any and all incoming mail is processed and delivered to designated in-house mail slots
+\end{description}
+
+\subsubsection{Food and Nutrition (FNS) Cards}
+\textbf{EBT Cards} are received and handed to the appropriate person upon pick up by the \textbf{Front Desk Staff}. These cards are received with the \textbf{Incoming Mail} and are handed to \textbf{Finance} before they make their way to the \textbf{Locked Container} located in the \textbf{Work Room} behind the \textbf{Front Desk}. 
+
+Before the end of business day, a \textbf{designated} member of the \textbf{Finance} team will retrieve the cards and ensure \textbf{all} cards are accounted for.
+
+\subsubsection{Outgoing Mail}
+\begin{description}
+    \item[$\bullet$] Sort and run all \textbf{Outgoing Mail} through the \textbf{Postage Machine}
+    \item[$\bullet$] Ensure that outgoing mail is properly marked with \textbf{Program Code} and \textbf{Employee Initials} - In the event of a return, these two factors facilitate knowing where the piece of mail in question goes
+    \item[$\bullet$] Ensure that outgoing mail is \textbf{Properly Sealed}
+    \item[$\bullet$] Gather all outgoing mail and \textbf{Interdepartmental Mail} for afternoon courier delivery by \textbf{3:00 p.m.}
+    \item[$\bullet$] Place any outgoing \textbf{State Courier} mail in the \textbf{Dropbox} located by the \textbf{Loading Dock} by \textbf{5:00 p.m.}. The key for this \textbf{Dropbox} can be found at the \textbf{Front Desk}.
+\end{description}
+
+\subsubsection{Return Mail}
+\begin{description}
+    \item[$\bullet$] Sort and research all \textbf{Returned Mail} using \textbf{NCFast} and \textbf{Compass Pilot}
+    \item[$\bullet$] Returned Mail that was identified with the proper \textbf{Program Code} and \textbf{Worker's Initials} is placed in the appropriate Program's in-house mail slot
+    \item[$\bullet$] Returned Mail that \textbf{cannot} be easily identified is \textbf{opened}, \textbf{researched}, and then \textbf{placed} in the appropriate Program's in-house mail slot
+\end{description}
+
+\subsection{Packages}
+Support Services staff is notified by members of the \textbf{Security} team whenever there is an arrival at the \textbf{Loading Dock} via \textbf{Radio}. 
+ 
+Under normal circumstances, a designated Support Services staff member is in charge of providing coverage at the Loading Dock for \textbf{Shipping} and \textbf{Receiving} purposes. 
+ 
+Usually, this role is played by \textbf{General Utilities}. The tasks to be performed are:
+\begin{description}
+    \item[$\bullet$] Incoming packages are \textbf{received} and \textbf{logged AT the Loading Dock}. No delivery is to be accepted at any other location.
+    \item[$\bullet$] \textbf{Delivery time}, \textbf{Date}, \textbf{Delivery Company}/\textbf{Person}, \textbf{Recipient} and \textbf{Receiver} are documented on the \textbf{log}
+    \item[$\bullet$] Packages are to be delivered to the appropriate \textbf{Department} or \textbf{Person} - or recipient notified of its arrival
+    \item[$\bullet$] \textbf{Refrigerated} or \textbf{Time Sensitive} packages are to be delivered immediately to the designated point of contact
+    \item[$\bullet$] \textbf{Return} or \textbf{Outgoing} packages are to be placed at the \textbf{designated area} in the Loading Dock for pick up
+\end{description}
+
+\subsection{Shred Services}
+Shred containers are located throughout the building in relation to \textbf{demand}. The contents of the \textbf{small} containers is emptied into the \textbf{large} containers to maximize efficiency. 
+
+The containers are emptied every \textbf{two} weeks by a \textbf{contracted vendor}. 
+
+Support Services coordinates \textbf{collection} of the containers and \textbf{organizes} them at the \textbf{Loading Dock}, the day prior to pick up. The \textbf{contracted vendor} scans the tags on the large containers and the pictures of the tags for the smaller containers. 
+
+This expedites the process and eliminates the need for the vendor to access \textbf{secure areas} of the building. Support Services makes accommodations for uncommon, large projects by rearranging containers within the building and accessing bins for documents that are mistakenly discarded. 
+
+The key for the bins is kept in the \textbf{Human Services Supervisor’s} office. The \textbf{General Utility} position is the primary contact for this service.
+
+\subsection{Supplies}
+\textbf{Support Services} ensures that an adequate amount of \textbf{office supplies} are available for the Agency. The \textbf{General Utilities} role is to stock all Work Rooms and Universal Interview Rooms on a weekly basis. 
+
+\textbf{Front Desk} personnel is to generate copies of forms in order to maintain readily available stock at the \textbf{Front Desk} and at the \textbf{Information Board} located by the \textbf{Drive-thru Window} 
+
+\subsection{Fleet Management}
+A designated member of the \textbf{Support Services} team utilizes the \textbf{KEYPER system} to support the \textbf{fleet} and manage \textbf{agency assets}. Within their role, these actions can be found:
+
+\begin{description}
+    \item[$\bullet$] Update the \textbf{KEYPER} registration accordingly to reflect \textbf{current} employees with \textbf{active status}
+    \item[$\bullet$] Manage \textbf{key} and \textbf{badge} distribution in order to ensure that practices are aligned with the \textbf{Internal Vehicle Policies}
+    \item[$\bullet$] Coordinate with \textbf{General Utilities} in order to conduct internal \textbf{monthly vehicle inspections}
+    \item[$\bullet$] Coordinate with the \textbf{County Garage} for all and any required and incidental \textbf{maintenance}
+    \item[$\bullet$] Coordinate with \textbf{General Utilities }to maintain cleanliness of the entire fleet of vehicles
+    \item[$\bullet$] Submit appropriate reports to the \textbf{Human Services Manager}
+\end{description}
+
+In the event vehicle maintenance is needed, vehicle visits are \textbf{scheduled} to the \textbf{Union County Garage}. The garage is located nearby at the \textbf{Union County Transportation} offices (610 Patton Ave, Monroe, NC 28110).
+
+Anything related to vehicle tires, required maintenance and car issues that require immediate attention is handled at the Union County Garage.
+
+
+\subsubsection{Inspections}
+Vehicles are to be inspected at \textbf{designated times}. If weather, staff shortage or another condition precludes the schedule, inspection should take place on the \textbf{next available date}. Vehicles are to be inspected on the \textbf{20th of each month}.
+
+Apart from general cleanliness of the fleet, a Support Services member is to inspect the vehicle on the designated \textbf{areas of interest}. For example, every vehicle should have the appropriate registration and inspection information located in the glove box.
+
+Random items such as trash or personal articles left behind should be removed, documented on the inspection sheet and an e-mail reminder must be sent to the Department that utilized the fleet vehicle in question. \textbf{Take pictures if needed}.
+
+Cleaning supplies can be found at the \textbf{Loading Dock}.
+
+\subsection{Event Coordination}
+The \textbf{General Utilities}, \textbf{Administrative Support Specialists}, \textbf{Human Services Supervisor} and \textbf{Human Services Manager} are the primary points of contact for \textbf{Conference Room Event Set-ups}. This includes, but is not limited to, arranging \textbf{tables} and \textbf{chairs} inside and outside of the facility for \textbf{events} and \textbf{group meetings}. 
+
+Support Services monitors meetings using the \textbf{Outlook Room Calendar}.
+
+\subsection{Public Service Announcements}
+\begin{description}
+    \item[$\bullet$] Useful information used to educate visitors about \textbf{events}, \textbf{services} and/or the \textbf{Agency} itself is displayed and publicized on the \textbf{televisions} located at the different \textbf{Lobbies}. If further information is needed about any of the slides being shown, please see the \textbf{County Website} for directions.
+    \item[$\bullet$] Resource pamphlets/flyers are located on a wall in the \textbf{main lobby}, by the bathrooms. In order to support and maintain a clean environment, we do not display information on \textbf{doors}, \textbf{walls} or \textbf{windows}. 
+    \item[$\bullet$] All announcements here are to be posted in \textbf{multiple languages}, based on population's demographic information.
+\end{description}
+
+\section{Visitors}
+A \textbf{visitor} is anyone not seeking services at the agency, included but not limited to Contractors, Vendors, Community Partners, Employment Candidates and County employees whose badge access is not designated for the \textbf{Human Services Agency}. 
+
+Agency staff is to notify the \textbf{Front Desk} and \textbf{Front Desk Supervisor} of all scheduled visitors. 
+
+All visitors are electronically signed and provided with a \textbf{Visitor's Badge} at the \textbf{Front Desk}. They are expected to wear it throughout their visit. At the end of their visit, the visitor is required to \textbf{return} the provided badge. 
+
+The \textbf{Visitor's Log} and \textbf{Visitor Badges} are located and found at \textbf{Window 5}. A designated Support Services member will clear out the \textbf{Visitor's Log} at the end of the day and account for \textbf{all} visitors. 
+
+Unescorted visitors are not allowed in \textbf{secured} work areas with the exception of \textbf{maintenance staff}. 
+
+\section{Emergency Response}
+\subsubsection{Potential Threat Response}
+
+If a member of Support Services observes a \textbf{Potential Threat} (someone threatening violence), they are to immediately call or contact the \textbf{Security Team} at 704-296-4468. Examples are:
+
+\begin{description}
+    \item[$\bullet$] If a person walks in and is considered to be a \textbf{potential danger}
+    \item[$\bullet$] If an appointment, meeting or visit is scheduled and the person in question is known to have a \textbf{history of violence} or there is a high likelihood for an \textbf{incident} to occur, notify the security team prior to the appointment as early as possible. This will allow the Security team to ensure coverage is available.   
+\end{description}
+
+The Security team will assess the situation and make the determination on \textbf{next steps} or \textbf{additional resources} to contact.
+
+In the event that \textbf{action} has to be taken on a \textbf{potential threat}, the Security team will notify the \textbf{Assistant Director of Human Services} and the \textbf{Division Director}.
+
+
+\subsubsection{Active Threat Response}
+If a Support Services member observes \textbf{IMMEDIATE} / \textbf{ACTIVE THREAT WITH VIOLENCE} (shooting, stabbing, etc.), \textbf{MOVE TO SAFETY AND IMMEDIATELY CALL 911}.
+
+Provide the 911 operator with the following information:
+
+\begin{description}
+    \item[$\bullet$] The fact that there is an \textbf{ACTIVE THREAT}
+    \item[$\bullet$] Location of said \textbf{THREAT} (Human Services Building, floor/sector)
+    \item[$\bullet$] Physical description and amount of individuals causing the \textbf{Active Threat}
+    \item[$\bullet$] Amount and type of \textbf{weapon(s)}    
+\end{description}
+
+\textbf{Once you get to a safe location after calling 911}:
+\begin{description}
+    \item[$\bullet$] Inform the \textbf{Security} team that you have contacted 911
+    \item[$\bullet$] Let them know that there is an \textbf{ACTIVE THREAT}
+    \item[$\bullet$] Provide them with the \textbf{location} and \textbf{description} of said threat
+\end{description}
+
+The Security team will do an \textbf{all-building} page: \textbf{"Active Threat, floor location and RUN, HIDE, FIGHT"}.
+
+If you do not reach the Security team, do an all-building page by:
+
+\begin{description}
+    \item[$\bullet$] Dial \textbf{5411}
+    \item[$\bullet$] Once done, dial \textbf{00\#}
+\end{description}
+
+State \textbf{"Active Threat, floor/sector location and RUN, HIDE, FIGHT"}. Press the * key to hang up.
+
+\subsubsection{Lockdown}
+In the event of an \textbf{Emergency} or \textbf{Active Threat} situation, a building \textbf{Lockdown} may be necessary. A building \textbf{Lockdown} can \textbf{ONLY} be executed by the \textbf{County Manager} or a \textbf{designee}.
+
+Human Services Agency designees include:
+\begin{description}
+    \item[$\bullet$] Deputy County Manager
+    \item[$\bullet$] Assistant Human Services Director
+    \item[$\bullet$] On-Scene Law Enforcement
+\end{description}
+
+A building \textbf{Lockdown} will be authorized after \textbf{Law Enforcement} assesses the Emergency or Active Threat situation. A notification of \textbf{Lockdown} will be sent to employees via \textbf{Building Page} and/or through the \textbf{Everbridge Emergency Notification System}.
+
+\textbf{DO NOT CONTACT THE SECURITY TEAM AFTER THE LOCKDOWN HAS BEEN ANNOUNCED.} 
+
+Once a \textbf{Lockdown} is announced, your job and role is to hide in place until Law Enforcement is able to \textbf{contain} the situation.
+
+In a building \textbf{Lockdown}, hiding in silence is your best defense. Due to this, it is imperative to:
+
+\begin{description}
+    \item[$\bullet$] Stay calm and quickly move to a safe place (doors with a green dot above)
+    \item[$\bullet$] Make sure your safe place has a door that is fully shut and locked
+    \item[$\bullet$] Do not open the door for anyone, even if they indicate they are Law Enforcement
+    \item[$\bullet$] Turn off the lights
+    \item[$\bullet$] Do not make any noise: Silence your phone, do not talk, do not answer your phone
+\end{description}
+
+\subsection{Actions to Remember}
+At the beginning of each meeting, please \textbf{inform} all \textbf{guests} of the location of \textbf{Emergency Exits}. In the event of an emergency, our guests will be looking out to us for guidance. It is due to this that being \textbf{prepared} and having \textbf{awareness} can make all the difference.
+
+Never rely on one option and \textbf{always} be prepared. An Active Threat situation can occur at any time and you may be in any part of this building, including \textbf{bathrooms} or \textbf{stairwells}. 
+
+Know where your exits and other safe locations exist.
+
+In the event of a \textbf{Lockdown Drill} or a \textbf{real life situation}, invite and inform any clients or guests that you see to come with you to a safe location. If they refuse, leave them and get yourself to the nearest safe location.
+
+Always be prepared to \textbf{RUN}, \textbf{HIDE} and \textbf{FIGHT}.
+
+\subsubsection{RUN}
+\textbf{Evacuate} if you can.
+\begin{description}
+    \item[$\bullet$] Have an escape route and plan in mind
+    \item[$\bullet$] Leave your belongings behind
+    \item[$\bullet$] Keep your hands visible
+\end{description}
+
+\subsubsection{HIDE}
+\textbf{Hide} away from the view of the active threat.
+\begin{description}
+    \item[$\bullet$] Block entries
+    \item[$\bullet$] Remain silent
+    \item[$\bullet$] Turn off cellphones
+    \item[$\bullet$] Turn off lights
+\end{description}
+
+\subsubsection{TAKE ACTION}
+This is a \textbf{last resort}.
+\begin{description}
+    \item[$\bullet$] Only if and when your life is in imminent danger
+    \item[$\bullet$] Attempt to incapacitate the active shooter
+    \item[$\bullet$] Act with physical aggression and throw items at the active shooter
+\end{description}
+
+\end{document}
